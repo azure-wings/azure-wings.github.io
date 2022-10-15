@@ -7,7 +7,8 @@ toc: true
 ## Theorem
 > Let $f: \mathbb{R} \to \mathbb{R}$ be a continuous function on the interval $[a,b]$.
 > Then, for any positive $\varepsilon$, there exists $n \in \mathbb{N}$ where for some 
-> $n$-degree polynomial $p_n$, $\lVert f - p_n \rVert_{C^0} \leq \varepsilon$ holds.
+> $n$-degree polynomial $p_n$,
+> $\lVert f - p_n \rVert_{C^0} \leq \varepsilon$ holds.
 
 ## Proof
 Without loss of generality, let $a=0$ and $b=1$. Since $f$ is continuous on $[0,1]$, let $M$ as:
@@ -35,7 +36,7 @@ Now, we will prove that the polynomial of interest is actually the **[Bernstein 
 $$
 \begin{aligned}
 |B_n(x;f)-f(\xi)| &= |B_n(x;f) - B_n\left(x;f(\xi)\right)| = |B_n\left(x;f-f(\xi)\right)|\\
-&= \left|\,\sum\limits_{\nu = 0}^n \left(f\left(\dfrac{\nu}{n}\right)-f(\xi)\right)\binom{n}{\nu}x^\nu (1-x)^{n-\nu}\,\right|\\
+&= \left|\sum\limits_{\nu = 0}^n \left(f\left(\dfrac{\nu}{n}\right)-f(\xi)\right)\binom{n}{\nu}x^\nu (1-x)^{n-\nu}\right|\\
 &\leq \sum\limits_{\nu = 0}^n \left|\,f\left(\dfrac{\nu}{n}\right)-f(\xi)\,\right|\binom{n}{\nu}x^\nu (1-x)^{n-\nu}\\
 &= B_n\left(x;|f-f(\xi)|\right)\\
 &\leq B_n\left(x; 2M\left( \dfrac{|x - \xi|}{\delta} \right) ^2 + \dfrac{\varepsilon}{2}\right)\\
