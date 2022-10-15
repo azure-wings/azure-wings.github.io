@@ -1,6 +1,6 @@
-baseURL = "https://quartz.jzhao.xyz/"
+baseURL = "https://azure-wings.github.io/wiki/"
 languageCode = "en-us"
-googleAnalytics = "G-XYFD95KB4J"
+googleAnalytics = "G-K0BSVL4NZ3"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
