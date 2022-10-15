@@ -36,4 +36,4 @@ jobs:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages # deploying branch
-          cname: azure-wings.github.io/
+          cname: azure-wings.github.io
