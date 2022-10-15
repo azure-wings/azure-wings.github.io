@@ -4,7 +4,7 @@ math: true
 toc: true
 ---
 
-## `UNION` Operation
+## `UNION` operation
 
 The SQL operation `UNION` corresponds to the mathematical operation $\cup$.
 
@@ -16,7 +16,7 @@ The `UNION` operation automatically **eliminates duplicates**.
 
 To retain duplicates, one must use `UNION ALL` operation instead.
 
-## `INTERSECT` Operation
+## `INTERSECT` operation
 
 The SQL operation `INTERSECT` corresponds to the mathematical operation $\cap$.
 
@@ -28,7 +28,7 @@ The `INTERSECT` operation automatically **eliminates duplicates**.
 
 To retain duplicates, one must use `INTERSECT ALL` operation instead.
 
-## `EXCEPT` Operation
+## `EXCEPT` operation
 
 The SQL operation `EXCEPT` corresponds to the mathematical operation $\setminus$.
 

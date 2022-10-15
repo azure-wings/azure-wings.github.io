@@ -4,7 +4,7 @@ math: true
 toc: true
 ---
 
-## Rename Operation
+## Rename operation
 
 SQL allows renaming relations and attributes using the `AS` clause.
 
@@ -14,7 +14,7 @@ old_name AS new_name
 
 The keyword `AS` is optional and may be omitted.
 
-## String Operation
+## String operation
 
 SQL includes a string matching operator for comparisons on character strings.\
 
@@ -47,7 +47,7 @@ For example,
 - `LIKE 'ab\%cd%' ESCAPE '\'` matches all strings beginning with `'ab%cd'`.
 - `LIKE 'ab\\cd%' ESCAPE '\'` matches all strings beginning with `'ab\cd'`.
 
-## Ordering the Display of Tuples
+## Ordering the display of tuples
 
 The `ORDER BY` clause causes the tuples in the results of a query to appear in sorted order.
 
@@ -59,7 +59,7 @@ We may specify `DESC` for descending order or `ASC` for ascending order; ascendi
 
 `ORDER BY` can sort on multiple attributes.
 
-## `WHERE` Clause Predicates
+## `WHERE` clause predicates
 
 SQL includes a `BETWEEN` comparison operator to simplify `WHERE` clauses.
 

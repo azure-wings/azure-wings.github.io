@@ -6,21 +6,21 @@ toc: true
 
 **`NULL` values** signifies an unknown value or that a value does not exist.
 
-## Arithmetic Operations
+## Arithmetic operations
 
 The result of **any** arithmetic expression involving `NULL` is `NULL`.
 
-## Comparison Operations
+## Comparison operations
 
 SQL treats as `UNKNOWN` the result of **any** comparison involving a `NULL` value, other than `IS NULL` and `IS NOT NULL`.
 
 The predicate in a `WHERE` clause can involve Boolean operations such as `AND`, `OR`, and `NOT`.
 
-- `**AND**`
+- **`AND`**
     - `TRUE AND UNKNOWN` = `UNKNOWN`
     - `FALSE AND UNKNOWN` = `FALSE`
     - `UNKNOWN AND UNKNOWN` = `UNKNOWN`
-- `**OR**`
+- **`OR`**
     - `UNKNOWN OR TRUE` = `TRUE`
     - `UNKNOWN OR FALSE` = `UNKNOWN`
     - `UNKNOWN OR UNKNOWN` = `UNKNOWN`
