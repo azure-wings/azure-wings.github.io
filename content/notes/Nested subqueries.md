@@ -151,8 +151,8 @@ WHERE   UNIQUE
 (
 	SELECT  R.course_id
 	FROM    course AS R
-	WHERE   T.course_id = R.course_id
-			AND R.year = 2017
+	WHERE   T.course_id = R.course_id AND
+			R.year = 2017
 );
 ```
     
