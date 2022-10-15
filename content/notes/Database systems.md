@@ -26,6 +26,7 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Null values in SQL]]
 - [[notes/Aggregate functions]]
 - [[notes/Nested subqueries]]
+- [[notes/Modification of the database]]
 
 ### Intermediate
 
