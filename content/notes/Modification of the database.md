@@ -75,9 +75,11 @@ A value in a tuple can be changed without changing _all_ values in the tuple wit
 ```sql
 UPDATE  r
 SET     A = (Some Value)
+WHERE   p
 ```
 - `r`: Relation
 - `A`: Attribute
+- `p`: Predicate
 
 **Examples**
 - Give a 5% salary raise to those instructors who earn less than 70000
