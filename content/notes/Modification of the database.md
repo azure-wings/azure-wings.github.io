@@ -52,5 +52,104 @@ INSERT INTO r
 **Examples**
 - Insert a new tuple to `course`
 ```sql
+INSERT INTO course
+    VALUES('CS360', 'Introduction to Database', 'SoC', 3)
+```
+- Make each student in the Music department who has earned more than 144 credit as an instructor in the Music department with a salary of 18000
+```sql
+INSERT INTO instructor
+(
+    SELECT  ID,
+            name,
+            dept_name,
+            18000
+    FROM    student
+    WHERE   dept_name = 'MUSIC'
+            AND tot_credit > 144
+); 
+```
+The `SELECT` - `FROM` - `WHERE` statement is **evaluated fully before** any of its results are inserted into the relation.
 
+## Update
+A value in a tuple can be changed without changing _all_ values in the tuple with the `UPDATE` statement.
+```sql
+UPDATE  r
+SET     A = (Some Value)
+```
+- `r`: Relation
+- `A`: Attribute
+
+**Examples**
+- Give a 5% salary raise to those instructors who earn less than 70000
+```sql
+UPDATE  instructor
+SET     salary = salary * 1.05
+WHERE   salary < 70000;
+```
+- Give a 5% salary raise to instructors whose salary is less than the average of all instructors
+```sql
+UPDATE  instructor
+SET     salary = salary * 1.05
+WHERE   salary <
+(
+    SELECT  AVG(salary)
+    FROM    instructor
+);
+```
+Note that the order of `UPDATE` statements is very important.\
+Consider the following query.
+```sql
+-- Update 1
+UPDATE  instructor
+SET     salary = salary * 1.03
+WHERE   salary > 100000
+-- Update 2
+UPDATE  instructor
+SET     salary = salary * 1.05
+WHERE   salary <= 100000
+```
+If the order of the two updates are changed, the results whould not be as desired.\
+To prevent order related problems, `CASE` construct is provided by SQL.
+
+### `CASE` construct
+`CASE` construct can be used in any place where a value is expected.
+```sql
+CASE
+    WHEN  P_1 THEN  R_1
+    ...
+    WHEN  P_n THEN  R_n
+    ELSE            R_0
+END
+```
+- `P_i`: Predicates
+- `R_i`: Resulting value
+  
+The error-prone query above can be re-written using `CASE` construct.
+```sql
+UPDATE  instructor
+SET     salary =
+(
+    CASE
+        WHEN salary <= 100000 THEN salary * 1.05
+        ELSE salary * 1.03
+    END
+);
+```
+### Updates with scalar subqueries
+Scalar subqueries are also useful in SQL update statements, where they can be used in `SET` clause.
+
+**Example**
+- Recompute and update `tot_credit` for all students to the credits of courses successfully completed by the student (successfully completed means `grade` is not `F` nor `NULL`)
+```sql
+UPDATE  student S
+SET     tot_credit =
+(
+    SELECT  SUM(credits)
+    FROM    takes JOIN course USING(course_id)
+    WHERE   S.ID = takes.ID AND
+            (
+                takes.grade <> 'F' AND
+                takes.grade IS NOT NULL
+            )
+);
 ```
