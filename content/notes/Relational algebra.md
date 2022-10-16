@@ -20,8 +20,6 @@ The unary selection operator $\sigma$ selects tuples that satisfy a given predic
 - Predicates are combined using $\wedge, \vee, \neg$.
 - The select predicate may include comparisons between two different attributes.
 
----
-
 ## Projection
 
 The unary projection operator $\Pi$ returns its argument relation with certain attributes removed.
@@ -29,8 +27,6 @@ The unary projection operator $\Pi$ returns its argument relation with certain a
 - $\Pi_{A_1, \cdots, A_k}(r)$, where $A_i$s are attributes and $r$ is a relation.
     - e.g., $\Pi_{\texttt{ID,name,salary}}(\texttt{Instructor})$
 - Duplicate rows are removed from the result
-
----
 
 ## Cartesian Product
 
@@ -53,8 +49,6 @@ It does *not* belong to the six basic operations.
 
 - $r_1\bowtie_\theta r_2 := \sigma_\theta(r_1\times r_2)$, where $r_1(R_1)$, $r_2(R_2)$ are relations, and $\theta$ is a predicate on attributes on the schema $R_1 \cup R_2$.
     - e.g., $\texttt{Instructor} \bowtie_{\texttt{Instructor.ID=Teaches.ID}}\texttt{Teaches}$
-
----
 
 ## Union
 
@@ -81,8 +75,6 @@ Two relations *must* satisfy the condition [$(*)$](#condition).
 
 - $r_1 \cap r_2$, where $r_1$ and $r_2$ are relations.
 
----
-
 ## Set Difference
 
 The binary union operator $-$ combines two relations.
@@ -92,8 +84,6 @@ It returns all tuples that are present in the preceding relation, but not in the
 Two relations *must* satisfy the condition [$(*)$](#condition).
 
 - $r_1 - r_2$, where $r_1$ and $r_2$ are relations.
-
----
 
 ## Rename
 
