@@ -88,7 +88,7 @@ Certain [[notes/Database systems | database systems]] allow view relations to be
 
 Such views are called **materialised views**. It is especially efficient for views that are very commonly used.
 
-If relations used in the query are [[notes/Modificatin of the database | updated]], the materialised view reult becomes **out of date**; views must be maintained to date by updating the view whenever the underlying relations are updated.
+If relations used in the query are [[notes/Modification of the database | updated]], the materialised view reult becomes **out of date**; views must be maintained to date by updating the view whenever the underlying relations are updated.
 
 ### Pros and cons of materialised views
 |      | Virtual Relation    | Materialisation             |
