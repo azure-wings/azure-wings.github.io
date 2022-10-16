@@ -96,4 +96,6 @@ There are three forms of outer join:
   
   Preserves tuples in both relations.
 
+
+
 In constrast, the join operations that do not preserve nonmatched tuples are called `INNER JOIN` operations.
