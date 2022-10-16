@@ -6,26 +6,33 @@ toc: true
 
 ## Domain types in SQL
 
-- **`char(n)`**\
+- **`char(n)`**
+  
     Fixed-length character string, with user-specified length `n`
     
-- **`varchar(n)`**\
+- **`varchar(n)`**
+  
     Variable-length character string, with user-specified **maximum** length `n`
     
-- **`int`**\
+- **`int`**
+  
     Integer (machine-dependent)
     
-- **`smallint`**\
+- **`smallint`**
+  
     Small integer (machine-dependent)
     
-- **`numeric(p, d)`**\
+- **`numeric(p, d)`**
+  
     Fixed-point  number, with user-specified precision of `p` digits (plus a sign), with `d` digits to the right of the decimal point
     - `numeric(3, 1)` allows `44.5` to be stored exactly, but neither `444.5` or `0.32` can be stored exactly.
   
-- **`real`, `double precision`**\
+- **`real`, `double precision`**
+  
     Floating-point and double precision floating-point numbers (machine-dependent precision)
     
-- **`float(n)`**\
+- **`float(n)`**
+  
     Floating-point number, with user-specified precision of at least `n` digits
     
 

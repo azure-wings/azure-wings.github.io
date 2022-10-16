@@ -29,5 +29,6 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Modification of the database]]
 
 ### Intermediate
+- [[notes/Join expressions]]
 
 ### Advanced
