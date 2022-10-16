@@ -57,6 +57,9 @@ Because of problems such as above, modifications are generally **not permitted**
 
 Most SQL implementations allow updates only on simple views:
 - The `FROM` clause has only one database relation.
+  
 - The `SELECT` clause contains only attributes of the relation, and does **not** have any expression, aggregates, or `DISTINCT` specification.
+  
 - Any attribute not listed in the `SELECT` clause can be set to `NULL`.
+  
 - The query does not have a `GROUP BY` or `HAVING` clause.
