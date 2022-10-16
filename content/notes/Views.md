@@ -91,6 +91,7 @@ Such views are called **materialised views**. It is especially efficient for vie
 If relations used in the query are [[notes/Modification of the database | updated]], the materialised view reult becomes **out of date**; views must be maintained to date by updating the view whenever the underlying relations are updated.
 
 ### Pros and cons of materialised views
+
 |      | Virtual Relation    | Materialisation             |
 |------|---------------------|-----------------------------|
 | Pros | No updated required | No query rewriting required |
