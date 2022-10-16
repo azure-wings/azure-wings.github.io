@@ -15,7 +15,7 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Structure of relational databases]]
 - [[notes/Keys]]
 - [[notes/Relational query language]]
-- [[notes/Relational algebra]]
+  - [[notes/Relational algebra]]
 ## SQL
 ### Introductory
 - [[notes/Overview of SQL]]
