@@ -15,7 +15,7 @@ Note that there are **equivalent queries**; there may be multiple ways to write 
 The unary selection operator $\sigma$ selects tuples that satisfy a given predicate.
 
 - $\sigma_p(r)$, where $p$ is a selection predicate and $r$ is a relation.
-    - e.g., $\sigma_{\texttt{dept\_name="Physics"}}(\texttt{Instructor})$
+    - e.g., $\sigma_{\texttt{building="E11"}}(\texttt{Department})$
 - Comparisons uses $=, \neq, >, \geq, <, \leq$ in the selection predicate.
 - Predicates are combined using $\wedge, \vee, \neg$.
 - The select predicate may include comparisons between two different attributes.
@@ -66,7 +66,9 @@ Two relations *must* satisfy the condition $[(*)](Relational%20Algebra%20d48d3c6
 
 - $r_1 \cup r_2$, where $r_1$ and $r_2$ are relations.
     - e.g., Find all courses taught in fall 2017, or in spring 2018, or in both:
-    $\Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Fall"}\wedge\texttt{year=2017}}(\texttt{Section})) \cup \Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Spring"}\wedge\texttt{year=2018}}(\texttt{Section}))$
+    $$
+        \Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Fall"}\wedge\texttt{year=2017}}(\texttt{Section})) \cup \Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Spring"}\wedge\texttt{year=2018}}(\texttt{Section})
+    $$
 
 ### Intersection
 
@@ -108,8 +110,11 @@ It acts similar as the assignment operation in general-purpose programming langu
 
 - $x \leftarrow E$, where $x$ is a name and $E$ is a relational algebra expression.
     - e.g., Find all instructors in any of the Physics or Music departments:
+  
     $\texttt{PH} \leftarrow \sigma_{\texttt{dept\_name="Physics"}}(\texttt{Instructor})$
+
     $\texttt{MU} \leftarrow \sigma_{\texttt{dept\_name="Musics"}}(\texttt{Instructor})$
+    
     $\texttt{PH} \cup \texttt{MU}$
 - With the assignment operation, a query can be written as a sequential program consisting of a series of assignments, followed by an expression whose value is displayed as the result of the query.
 
