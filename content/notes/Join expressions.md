@@ -38,8 +38,9 @@ AND     r_1.A_n = r_2.A_n
 It is an **equi-join**, and causes duplicate attributes to be **removed** from the resultset.
 
 ### `ON` construct
-The `ON` condition allows a general predicate over the relaions being joined.\
-This predicate is wwritten like a `WHERE` clause predicate.
+The `ON` condition allows a general predicate over the relaions being joined.
+
+This predicate is written like a `WHERE` clause predicate.
 ```sql
 r_1 JOIN r_2 ON p
 ```
