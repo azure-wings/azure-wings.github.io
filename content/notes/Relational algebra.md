@@ -4,7 +4,7 @@ math: true
 toc: true
 ---
 
-A **relational algebra** is a procedural [query language](Relational%20Query%20Language%2009b57cd8794a4887bb519f82b7ce98e7.md) consisting of a set of operations that take one or two relations as input and produce a new relation as their result.
+A **relational algebra** is a procedural [[notes/Relational query language | query language]] consisting of a set of operations that take one or two relations as input and produce a new relation as their result.
 
 There are six basic operators: $\sigma$(Selection), $\Pi$(Projection), $\cup$(Union), $-$(Set difference), $\times$(Cartesian product), and $\rho$(Rename).
 
@@ -62,12 +62,13 @@ The binary union operator $\cup$ combines two relations.
 
 It returns all tuples that are present in at least one of the relations.
 
-Two relations *must* satisfy the condition $[(*)](Relational%20Algebra%20d48d3c6b16584d9f96d66cfc182e0d6f.md)$.
+Two relations *must* satisfy the condition *[^1].
 
 - $r_1 \cup r_2$, where $r_1$ and $r_2$ are relations.
     - e.g., Find all courses taught in fall 2017, or in spring 2018, or in both:
     $$
-        \Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Fall"}\wedge\texttt{year=2017}}(\texttt{Section})) \cup \Pi_{\texttt{course\_ID}}(\sigma_{\texttt{semester="Spring"}\wedge\texttt{year=2018}}(\texttt{Section})
+        \Pi_{\texttt{courseID}}(\sigma_{\texttt{semester="Fall"}\wedge\texttt{year=2017}}(\texttt{Section})) \cup \\
+        \Pi_{\texttt{courseID}}(\sigma_{\texttt{semester="Spring"}\wedge\texttt{year=2018}}(\texttt{Section})
     $$
 
 ### Intersection
@@ -76,7 +77,7 @@ The binary union operator $\cap$ combines two relations.
 
 It returns all tuples that are present in both of the relations.
 
-Two relations *must* satisfy the condition $[(*)](Relational%20Algebra%20d48d3c6b16584d9f96d66cfc182e0d6f.md)$.
+Two relations *must* satisfy the condition *[^1].
 
 - $r_1 \cap r_2$, where $r_1$ and $r_2$ are relations.
 
@@ -88,7 +89,7 @@ The binary union operator $-$ combines two relations.
 
 It returns all tuples that are present in the preceding relation, but not in the succeeding relation.
 
-Two relations *must* satisfy the condition $[(*)](Relational%20Algebra%20d48d3c6b16584d9f96d66cfc182e0d6f.md)$.
+Two relations *must* satisfy the condition *[^1].
 
 - $r_1 - r_2$, where $r_1$ and $r_2$ are relations.
 
@@ -111,16 +112,16 @@ It acts similar as the assignment operation in general-purpose programming langu
 - $x \leftarrow E$, where $x$ is a name and $E$ is a relational algebra expression.
     - e.g., Find all instructors in any of the Physics or Music departments:
   
-    $\texttt{PH} \leftarrow \sigma_{\texttt{dept\_name="Physics"}}(\texttt{Instructor})$
+    $\texttt{PH} \leftarrow \sigma_{\texttt{deptname="Physics"}}(\texttt{Instructor})$
 
-    $\texttt{MU} \leftarrow \sigma_{\texttt{dept\_name="Musics"}}(\texttt{Instructor})$
+    $\texttt{MU} \leftarrow \sigma_{\texttt{deptname="Musics"}}(\texttt{Instructor})$
     
     $\texttt{PH} \cup \texttt{MU}$
 - With the assignment operation, a query can be written as a sequential program consisting of a series of assignments, followed by an expression whose value is displayed as the result of the query.
 
 ---
 
-**Condition $(*)$:**
+[^1]: **Condition**
 
 - Two relations must have the same arity.
 - The attributes of the two relations must be compatible.

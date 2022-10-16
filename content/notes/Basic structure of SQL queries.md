@@ -15,39 +15,43 @@ WHERE   p
 ```
 
 - `A_i`: Attributes
-- `R_i`: Relations
-- `P`: Predicate
+- `r_i`: Relations
+- `p`: Predicate
 
 The result of an SQL query is a relation.
 
 ### `SELECT` Clause
 
-- The `SELECT` clause lists the attributes desired in the result of a query.\
-It corresponds to the projection operation $\Pi$ of the [[notes/Relational algebra]].\
-Note that SQL names are case insensitive.
+- The `SELECT` clause lists the attributes desired in the result of a query.
+  
+    It corresponds to the projection operation $\Pi$ of the [[notes/Relational algebra | relational algebra]].
+    Note that SQL names are case insensitive.
     
-- The `DISTINCT` keyword inserted after `SELECT` eliminates all duplicates.\
-The `ALL` keyword, on the other hand, explicitly specifies that duplicates should not be removed, although it is the default of `SELECT` clause.
+- The `DISTINCT` keyword inserted after `SELECT` eliminates all duplicates.
+- The `ALL` keyword, on the other hand, explicitly specifies that duplicates should not be removed, although it is the default of `SELECT` clause.
     
 - A `*` in the `SELECT` clause denotes all attributes.
-- An attribute can be a literal **without** `FROM` clause.\
-The result is a table with one column and a single row with the literal value.
+- An attribute can be a literal **without** `FROM` clause.
+
+    The result is a table with one column and a single row with the literal value.
     
-- An attribute can be a literal **with** `FROM` clause.\
-The result is a table with one column and rows (number equal to the number of rows on the table), each row with the literal value.
+- An attribute can be a literal **with** `FROM` clause.
+    
+    The result is a table with one column and rows (number equal to the number of rows on the table), each row with the literal value.
     
 - `SELECT` clause can contain arithmetic expressions (`+`, `-`, `*`, `/`) operating on constants or attributes of tuples.
 
 ### `FROM` Clause
 
 - The `FROM` clause lists the relations involved in the query.\
-It corresponds to the Cartesian product $\times$ of the [[notes/Relational algebra]].
+It corresponds to the Cartesian product $\times$ of the [[notes/Relational algebra | relational algebra]].
     
 
 ### `WHERE` Clause
 
-- The `WHERE` clause specifies conditions that the resulting relation must satisfy.\
-It corresponds to the selection operation $\sigma$ of the [[notes/Relational algebra]].
+- The `WHERE` clause specifies conditions that the resulting relation must satisfy.
+
+    It corresponds to the selection operation $\sigma$ of the [[notes/Relational algebra | relational algebra]].
     
 - SQL allows the use of the logical connectives `AND`, `OR`, and `NOT`.
 - The operands of the logical connectives can be expressions involving the comparison operators, `<`, `<=`, `>`, `>=`, `=`, and `<>`.\
