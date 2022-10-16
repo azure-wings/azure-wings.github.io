@@ -33,5 +33,6 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Views]]
   - [[notes/Update of a view]]
 - [[notes/Transactions]]
+- [[notes/Integrity constraints]]
 
 ### Advanced
