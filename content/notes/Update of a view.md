@@ -50,7 +50,7 @@ CREATE VIEW history_instructors AS
 INSERT INTO history_instructors VALUES
     ('25566', 'Brown', 'Biology', 7000);
 ```
-Should the insertion be allowed?
+- Should the insertion be allowed?
 
 ## View updates in SQL
 Because of problems such as above, modifications are generally **not permitted** on view relations, except in limited cases.
