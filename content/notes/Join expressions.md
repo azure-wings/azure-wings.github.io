@@ -129,4 +129,4 @@ WHERE   student.ID = takes.ID
 AND     student.name = 'Snow'
 -- Result: 
 ```
-In the latter query, every tuple satisfies the join condition `TRUE`, hence the outer join actually generates the Cartesian product of the two relations. Since there are no tuples in `takes` with the ID `'70557'`, every time a tuple appears in the outer join with the name `'Snow'`, the values for `student.ID` and `taked.ID` must be different, and such tuples are eliminated by the `WHERE` clause predicate. Thus the resultset is empty.
+In the latter query, every tuple satisfies the join condition `TRUE`, hence the outer join actually generates the Cartesian product of the two relations. Since there are no tuples in `takes` with the ID `'70557'`, every time a tuple appears in the outer join with the name `'Snow'`, the values for `student.ID` and `takes.ID` must be different, and such tuples are eliminated by the `WHERE` clause predicate. Thus the resultset is empty.
