@@ -52,7 +52,8 @@ FROM    r_1,
         r_2
 WHERE   p
 ```
-It is a **theta join**, and it allows duplicate attributes to appear in the resultset.\
+It is a **theta join**, and it allows duplicate attributes to appear in the resultset.
+
 **Example**
 - All attributes about all students, along with all the courses that they have took
 ```sql
@@ -66,7 +67,7 @@ ON      student.ID = takes.ID
 #### Comparison of `ON` and `USING`
 In a nutshell, `ON` can be used for most joins, but `USING` is a handy shorthand for the situation where _the column names are the same_.
 
-The following queries are quivalent.
+The following queries are equivalent.
 ```sql
 SELECT  I.title, R.name
 FROM    albums I
