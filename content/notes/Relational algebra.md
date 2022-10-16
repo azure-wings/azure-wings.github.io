@@ -121,9 +121,9 @@ It acts similar as the assignment operation in general-purpose programming langu
 
 ---
 
-[^1]: **Condition**
-
-- Two relations must have the same arity.
-- The attributes of the two relations must be compatible.
+[^1]: 
+> **Condition**
+> - Two relations must have the same arity.
+> - The attributes of the two relations must be compatible.
 
 ---
