@@ -98,6 +98,6 @@ There are three forms of outer join:
   
   Preserves tuples in both relations.
 
-
+![sql-join-visualisation](/notes/images/sql-join-visualisation.png)
 
 In constrast, the join operations that do not preserve nonmatched tuples are called `INNER JOIN` operations.
