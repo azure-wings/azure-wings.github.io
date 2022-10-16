@@ -62,7 +62,7 @@ The binary union operator $\cup$ combines two relations.
 
 It returns all tuples that are present in at least one of the relations.
 
-Two relations *must* satisfy the condition *[^1].
+Two relations *must* satisfy the condition [$(*)$](#condition).
 
 - $r_1 \cup r_2$, where $r_1$ and $r_2$ are relations.
     - e.g., Find all courses taught in fall 2017, or in spring 2018, or in both:
@@ -77,7 +77,7 @@ The binary union operator $\cap$ combines two relations.
 
 It returns all tuples that are present in both of the relations.
 
-Two relations *must* satisfy the condition *[^1].
+Two relations *must* satisfy the condition [$(*)$](#condition).
 
 - $r_1 \cap r_2$, where $r_1$ and $r_2$ are relations.
 
@@ -89,7 +89,7 @@ The binary union operator $-$ combines two relations.
 
 It returns all tuples that are present in the preceding relation, but not in the succeeding relation.
 
-Two relations *must* satisfy the condition *[^1].
+Two relations *must* satisfy the condition [$(*)$](#condition).
 
 - $r_1 - r_2$, where $r_1$ and $r_2$ are relations.
 
@@ -121,9 +121,6 @@ It acts similar as the assignment operation in general-purpose programming langu
 
 ---
 
-[^1]: 
-> **Condition**
+#### Condition
 > - Two relations must have the same arity.
 > - The attributes of the two relations must be compatible.
-
----
