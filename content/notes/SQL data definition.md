@@ -77,7 +77,7 @@ CREATE TABLE instructor
     - Required to be *nonnull* and *unique*.
     
 - **`FOREIGN KEY(A_1, ... , A_n) REFERENCES s`**
-    - Values of attributes `(A_1, ... , A_n)` for any tuple in the relation *must* correspond to values of the **primary key** attributes of some tuple in relation `s`
+    - Values of attributes `(A_1, ... , A_n)` for any tuple in the relation *must* correspond to values of the **primary key** attributes (or any attributes with `UNIQUE` constraint specified) of some tuple in relation `s`
     
 - **`NOT NULL`**
     - `NULL` value is not allowed for that attribute
