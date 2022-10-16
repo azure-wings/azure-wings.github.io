@@ -101,3 +101,32 @@ There are three forms of outer join:
 ![sql-join-visualisation](/notes/images/sql-join-visualisation.png)
 
 In constrast, the join operations that do not preserve nonmatched tuples are called `INNER JOIN` operations.
+
+### Outer join with `ON` construct
+For outer join, `ON` and `WHERE` behave differently. The reason for this is that outer join adds `NULL`-padded tuples only for those tuples that do not contribute to the result of the corresponding inner join.
+
+The `ON` condition is part of the outer join specification, whilst `WHERE` clause is **not**.
+
+**Example**
+
+Suppose that the relation `student` has a tuple with name `Snow`, which has no corresponding tuples in the `takes` relation.
+
+The following two queries are **not** equivalent.
+```sql
+SELECT  *
+FROM    student
+LEFT OUTER JOIN takes
+ON      student.ID = takes.ID;
+WHERE   student.name = 'Snow'
+-- Result: (70557, 'Snow', 'Physics', 0, NULL, NULL, NULL, NULL, NULL, NULL)
+```
+```sql
+SELECT  *
+FROM    student
+LEFT OUTER JOIN takes
+ON      TRUE
+WHERE   student.ID = takes.ID
+AND     student.name = 'Snow'
+-- Result: 
+```
+In the latter query, every tuple satisfies the join condition `TRUE`, hence the outer join actually generates the Cartesian product of the two relations. Since there are no tuples in `takes` with the ID `'70557'`, every time a tuple appears in the outer join with the name `'Snow'`, the values for `student.ID` and `taked.ID` must be different, and such tuples are eliminated by the `WHERE` clause predicate. Thus the resultset is empty.
