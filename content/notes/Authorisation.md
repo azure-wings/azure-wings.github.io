@@ -5,21 +5,13 @@ toc: true
 ---
 
 A user can be assigned several forms of authorisations on parts of the database:
-- **Read**
-  
-  Allows reading, but not modification of data
+- **Read**: Allows reading, but not modification of data
 
-- **Insert**
-  
-  Allows insertion of new data, but not modification of existing data
+- **Insert**: Allows insertion of new data, but not modification of existing data
 
-- **Update**
-  
-  Allows modification, but not deletion of data
+- **Update**: Allows modification, but not deletion of data
 
-- **Delete**
-  
-  Allows deletion of data
+- **Delete**: Allows deletion of data
 
 Each of these types of authorisations is called **privilege**.
 
