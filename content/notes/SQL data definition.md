@@ -6,39 +6,39 @@ toc: true
 
 ## Domain types in SQL
 
-- **`char(n)`**
+- **`CHAR(n)`**
   
     Fixed-length character string, with user-specified length `n`
     
-- **`varchar(n)`**
+- **`VARCHAR(n)`**
   
     Variable-length character string, with user-specified **maximum** length `n`
     
-- **`int`**
+- **`INT`**
   
     Integer (machine-dependent)
     
-- **`smallint`**
+- **`SMALLINT`**
   
     Small integer (machine-dependent)
     
-- **`numeric(p, d)`**
+- **`NUMERIC(p, d)`**
   
     Fixed-point  number, with user-specified precision of `p` digits (plus a sign), with `d` digits to the right of the decimal point
-    - `numeric(3, 1)` allows `44.5` to be stored exactly, but neither `444.5` or `0.32` can be stored exactly.
+    - `NUMERIC(3, 1)` allows `44.5` to be stored exactly, but neither `444.5` or `0.32` can be stored exactly.
   
-- **`real`, `double precision`**
+- **`REAL`, `DOUBLE PRECISION`**
   
     Floating-point and double precision floating-point numbers (machine-dependent precision)
     
-- **`float(n)`**
+- **`FLOAT(n)`**
   
     Floating-point number, with user-specified precision of at least `n` digits
     
 
 ## Basic schema definition
 
-An SQL relation is defined using the `create table` command.
+An SQL relation is defined using the `CREATE TABLE` command.
 
 ```sql
 CREATE TABLE r
@@ -60,10 +60,10 @@ CREATE TABLE r
 ```sql
 CREATE TABLE instructor
 (
-	ID           char(5),
-	name         varchar(20) NOT NULL,
-	dept_name    varchar(20),
-	salary       numeric(8, 2),
+	ID           CHAR(5),
+	name         VARCHAR(20) NOT NULL,
+	dept_name    VARCHAR(20),
+	salary       NUMERIC(8, 2),
 	PRIMARY KEY(ID),
 	FOREIGN KEY(dept_name) REFERENCES department
 );
@@ -74,10 +74,10 @@ CREATE TABLE instructor
 
 - **`PRIMARY KEY(A_1, ... , A_n)`**
     - Attributes `A_1`, … , `A_n` form the primary key for the relation.
-    - Required to be *nonnull* and *unique*.
+    - Required to be *non-null* and *unique*.
     
 - **`FOREIGN KEY(A_1, ... , A_n) REFERENCES s`**
-    - Values of attributes `(A_1, ... , A_n)` for any tuple in the relation *must* correspond to values of the **primary key** attributes of some tuple in relation `s`
+    - Values of attributes `(A_1, ... , A_n)` for any tuple in the relation *must* correspond to values of the **primary key** attributes (or any attributes with `UNIQUE` constraint specified) of some tuple in relation `s`
     
 - **`NOT NULL`**
     - `NULL` value is not allowed for that attribute
