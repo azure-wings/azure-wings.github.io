@@ -1,10 +1,11 @@
 ---
-title: azure-wiki
+title: azurewings
 toc: false
 ---
 
-> Wiki made by azurewings
-
+> “The fact that I can plant a seed and it becomes a flower, share a bit of knowledge and it becomes another's, smile at someone and receive a smile in return, are to me continual spiritual exercises.” 
+>
+> — _Leo Buscaglia_
 ## Index
 
 ### 📚 Academic
