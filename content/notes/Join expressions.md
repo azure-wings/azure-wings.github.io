@@ -26,7 +26,7 @@ r_1 JOIN r_2 USING(A_1, ... , A_n)
 - `r_i`: Relation
 - `A_i`: Attribute
 
-The operation is equivalent to*[^1]:
+The operation is equivalent to:
 ```sql
 SELECT  *
 FROM    r_1,
@@ -131,5 +131,3 @@ AND     student.name = 'Snow'
 -- Result: 
 ```
 In the latter query, every tuple satisfies the join condition `TRUE`, hence the outer join actually generates the Cartesian product of the two relations. Since there are no tuples in `takes` with the ID `'70557'`, every time a tuple appears in the outer join with the name `'Snow'`, the values for `student.ID` and `takes.ID` must be different, and such tuples are eliminated by the `WHERE` clause predicate. Thus the resultset is empty.
-
-[^1]: Actually, the queries are not 'equivalent,' because the equi-join has duplicate attributes for each common attributes. Here, just assume that duplicate attributes are dropped automatically.
