@@ -13,13 +13,13 @@ WITH RECURSIVE rec_prereq(course_id, prereq_id) AS
 (
     (
         SELECT  course_id,
-            prereq_id
+                prereq_id
         FROM    prereq
     )
     UNION
     (
         SELECT  rec_prereq.course_id,
-            prereq.prereq_id
+                prereq.prereq_id
         FROM    rec_prereq,
                 prereq
         WHERE   rec_prereq.prereq_id = prereq.course_id
