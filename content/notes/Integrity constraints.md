@@ -65,7 +65,7 @@ CHECK
     )
 )
 ```
-The condition must be checked not only when a tuple is inserted or modified in `section`, but also the relation `time_slot` changes.
+The condition must be checked not only when a tuple is inserted or modified in `section`, but also when the relation `time_slot` changes.
 
 ## Referential integrity
 **[[notes/SQL data definition#Integrity Constraints | Referential integrity]]** ensures that a value that appears in one relation for a given set of attributes also appears for a certain set of attributes in another relation.
