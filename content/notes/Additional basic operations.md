@@ -59,6 +59,18 @@ We may specify `DESC` for descending order or `ASC` for ascending order; ascendi
 
 `ORDER BY` can sort on multiple attributes.
 
+### `LIMIT` clause
+A `LIMIT n` clause, used in conjunction with an `ORDER BY` clause, can be added at the end of an SQL query to specify that only first `n` tuples should be the output.
+
+```sql
+ORDER BY some_attribute
+LIMIT n
+```
+
+However, `LIMIT` clause does not support [[notes/Advanced aggregation features#Ranking with partitions | partitioning]], so top `n` results within each partition cannot be obtained without performing [[notes/Advanced aggregation features | ranking]].
+
+Furthermore, if more than one tuple has the same value for the attribute, it is possible that one is included in the top `n`, whilst another is excluded.
+
 ## `WHERE` clause predicates
 
 SQL includes a `BETWEEN` comparison operator to simplify `WHERE` clauses.
