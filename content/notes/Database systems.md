@@ -40,3 +40,7 @@ A **database management system**(DBMS) is a collection of interrelated data and 
   - [[notes/Roles]]
 
 ### Advanced
+- [[notes/Accessing SQL from a programming language]]
+- [[notes/Triggers in SQL]]
+- [[notes/Recursive queries]]
+- [[notes/Advanced aggregation features]]
