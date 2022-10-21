@@ -9,12 +9,12 @@ toc: false
 
 - Graduate of Korea Science Academy of KAIST
 - Currently studying Computer Science and Mathematics at KAIST
-- [[About me | More about me]]
+- [[index/About me | More about me]]
 
 ## Read my writings...
-- **[[Blog | 🌱 Blog]]**
-- **[[Notes | ✏️ Notes]]**
-- **[[Links | 🔗 Links]]**
+- **[[index/Blog | 🌱 Blog]]**
+- **[[index/Notes | ✏️ Notes]]**
+- **[[index/Links | 🔗 Links]]**
 
 ## Find me in...
 <a href="https://github.com/azure-wings" target="_blank"><img src="https://img.shields.io/badge/Github-282828?style=for-the-badge&logo=GitHub&logoColor=white"/></a>
