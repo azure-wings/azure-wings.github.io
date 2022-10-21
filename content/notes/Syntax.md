@@ -2,6 +2,8 @@
 title: "Syntax"
 math: true
 toc: true
+tags:
+- TODO
 ---
 
 **Syntax** of a programming language decides the apprearance of the language.

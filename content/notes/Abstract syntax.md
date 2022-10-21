@@ -2,6 +2,8 @@
 title: "Abstract syntax"
 math: true
 toc: true
+tags:
+- TODO
 ---
 
 **Abstract syntax** formally express multiple components and subcomponents the program consists of.
