@@ -11,7 +11,7 @@ toc: false
 - Currently studying Computer Science and Mathematics at KAIST
 - [[index/About me | More about me]]
 
-## Read my writings...
+## Read my writings on...
 - **[[index/Blog | 🌱 Blog]]**
 - **[[index/Notes | ✏️ Notes]]**
 - **[[index/Links | 🔗 Links]]**
