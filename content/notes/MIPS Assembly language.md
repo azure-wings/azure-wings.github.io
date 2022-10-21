@@ -2,6 +2,8 @@
 title: "MIPS Assembly language"
 math: false
 toc: true
+tags:
+- WIP
 ---
 
 ## Operands and operations

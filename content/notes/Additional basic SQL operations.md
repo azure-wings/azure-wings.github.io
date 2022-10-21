@@ -1,5 +1,5 @@
 ---
-title: "Additional basic operations"
+title: "Additional basic SQL operations"
 math: true
 toc: true
 ---

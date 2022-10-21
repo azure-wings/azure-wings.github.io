@@ -2,6 +2,8 @@
 title: "Programming language theory"
 math: true
 toc: true
+tags:
+- WIP
 ---
 
 **Programming language theory** (**PLT**) is a branch of [computer science](index/Computer%20science.md) that deals with the design, implementation, analysis, characterisation, and classification of formal languages known as programming languages and of their individual features.

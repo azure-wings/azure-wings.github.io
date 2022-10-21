@@ -2,6 +2,8 @@
 title: "Artificial intelligence"
 math: true
 toc: true
+tags:
+- WIP
 ---
 
 **Artificial intelligence** is is intelligence demonstrated by machines, as opposed to the **natural intelligence** displayed by animals including humans.

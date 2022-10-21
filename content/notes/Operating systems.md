@@ -2,6 +2,8 @@
 title: "Operating systems"
 math: true
 toc: true
+tags:
+- WIP
 ---
 
 ## Kernels and Processes

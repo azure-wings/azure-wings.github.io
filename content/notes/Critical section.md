@@ -2,6 +2,8 @@
 title: "Critical section"
 math: true
 toc: true
+tags:
+- WIP
 ---
 
 ## Definition

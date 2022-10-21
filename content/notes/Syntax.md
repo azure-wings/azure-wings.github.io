@@ -3,7 +3,7 @@ title: "Syntax"
 math: true
 toc: true
 tags:
-- TODO
+- WIP
 ---
 
 **Syntax** of a programming language decides the apprearance of the language.

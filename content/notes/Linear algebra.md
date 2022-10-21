@@ -2,6 +2,8 @@
 title: "Linear algebra"
 math: true
 toc: true
+tags:
+- WIP
 ---
 
 Linear algebra is the branch of mathematics concerning linear equations, linear transformations (maps), and their representations in vector spaces and through matrices.

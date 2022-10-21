@@ -21,7 +21,7 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Overview of SQL]]
 - [[notes/SQL data definition]]
 - [[notes/Basic structure of SQL queries]]
-- [[notes/Additional basic operations]]
+- [[Additional basic SQL operations]]
 - [[notes/Set operations in SQL]]
 - [[notes/Null values in SQL]]
 - [[notes/Aggregate functions]]
