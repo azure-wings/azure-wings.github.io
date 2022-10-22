@@ -65,4 +65,4 @@ other = "Table of Contents"
 other = "Tags"
 
 [copyright]
-other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
+other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">❤️</a>, © {{ .year }}"
