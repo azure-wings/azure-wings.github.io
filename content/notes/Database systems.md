@@ -44,3 +44,9 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Triggers in SQL]]
 - [[notes/Recursive queries]]
 - [[notes/Advanced aggregation features]]
+
+## Database design
+- [[notes/E-R model]]
+  - [[notes/Entity sets]]
+  - [[notes/Relationship sets]]
+  - [[notes/Attributes(E-R)]]
