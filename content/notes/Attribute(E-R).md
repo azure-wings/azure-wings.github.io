@@ -1,5 +1,5 @@
 ---
-title: "Attributes(E-R)"
+title: "Attribute(E-R)"
 math: true
 toc: true
 ---
