@@ -18,20 +18,20 @@ For a binary relationship set $R$ between entity sets $A$ and $B$, the mapping c
 ### One-to-one
 An entity in $A$ is associated with _at most_ one entity in $B$, and vice versa.
 
-![one-to-one-mapping-example](images/one-to-one-mapping-example.png)
+![one-to-one-mapping-example](notes/images/one-to-one-mapping-example.png)
 
 ### One-to-many
 An entity in $A$ is associated with any number (zero or more) of entities in $B$. An entity in $B$ can be associated with _at most_ one entity in $A$.
 
-![one-to-many-mapping-example](images/one-to-many-mapping-example.png)
+![one-to-many-mapping-example](notes/images/one-to-many-mapping-example.png)
 
 ### Many-to-one
 An entity in $A$ can be associated with _at most_ one entity in $B$. An entity in $B$ is associated with any number (zero or more) of entities in $A$.
 
-![many-to-one-mapping-example](images/many-to-one-mapping-example.png)
+![many-to-one-mapping-example](notes/images/many-to-one-mapping-example.png)
 
 ### Many-to-many
 An entity in $A$ is associated with any number (zero or more) of entities in $B$, and vice versa.
 
-![many-to-many-mapping-example](images/many-to-many-mapping-example.png)
+![many-to-many-mapping-example](notes/images/many-to-many-mapping-example.png)
 
