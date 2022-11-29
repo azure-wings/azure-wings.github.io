@@ -35,3 +35,14 @@ An entity in $A$ is associated with any number (zero or more) of entities in $B$
 
 ![many-to-many-mapping-example](images/many-to-many-mapping-example.png)
 
+## Participation constraints
+
+Let $E$ be an entity set and $R$ be a relationship set.
+
+- **Total participation**
+
+    The participation of $E$ in $R$ is said to be **total** if every entity in $E$ participates in at least one relationship of $R$.
+
+- **Partial participation**
+  
+    The participation of $E$ in $R$ is said to be **partial** if only some entities in $E$ participate in relationships in $R$.
