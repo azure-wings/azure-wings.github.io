@@ -46,3 +46,43 @@ A database which conforms to an [[notes/E-R diagram]] can be represented by a co
 
 - The schema corresponding to a relationship set linking a [[notes/Primary key(E-R)#Weak entity sets|weak entity set]] to its identifying strong entity set is **redundant**.
   - e.g., The `section` schema already contains the attributes that would appear in the `sec-course` schema.
+
+## Representing [[notes/Extended E-R features#Specialisation|specialisations]]
+
+### Method 1
+1. Form a schema for the higher level entity.
+2. Form a schema for each of the lower level entity set, and include the primary key if the higher level entity set and local attributes.
+
+e.g.,
+| Schema | Attributes |
+|--------|------------|
+| person | ID, name, street, city |
+| student | ID, credits |
+| employee | ID, salary |
+
+- **Drawbacks**: Accessing information about an lower level entity requires accessing two relations (the one corresponding to the lower level schema, and the one corresponding to the higher level schema).
+
+### Method 2
+1. Form a schema for each entity set with all local and inherited attributes.
+  
+e.g.,
+| Schema | Attributes |
+|--------|------------|
+| person | ID, name, street, city |
+| student | ID, name, street, city, credits |
+| employee | ID, name, street, city, salary |
+
+- **Drawbacks**: Some attributes may be stored redundantly for entities that belongs to two or more specialised entity sets.
+
+## Representing aggregations
+
+To represent [[notes/Extended E-R features#Aggregation|aggregations]], create a schema containing
+- The primary key of the aggregated relationship
+- The primary key of the associated entity set
+- Any descriptive attributes
+
+e.g.,
+
+Consider the ternary relationship `proj-guide` between `instructor`, `student`, and `project`. Regard the relationship set `proj-guide` as a higher-level entity set. Create a binary relationship `eval-for` between `proj-guide` and `evaluation`.
+
+The schema for `eval-for` is: $\texttt{eval-for(studentID, projectID, instructorID, evaluationID)}$

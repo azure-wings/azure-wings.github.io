@@ -8,33 +8,19 @@ toc: true
 
 An E-R diagram consists of the following major components:
 
-- **Rectangles divided into two parts**
+- **Rectangles divided into two parts**: Represent entity sets. The first part contains the name of the entity set. The second part contains the names of all the attributes of the entity set.
 
-    Represent entity sets. The first part contains the name of the entity set. The second part contains the names of all the attributes of the entity set.
+- **Diamonds**: Represent relationship sets.
 
-- **Diamonds**
+- **Undivided rectangles**: Represent the attributes of a relationship set. Attributes that are part of the primary key are underlined.
 
-    Represent relationship sets.
+- **Lines**: Link entity sets to relationship sets.
 
-- **Undivided rectangles**
+- **Dashed lines**: Link attributes of a relationship set to the relationship set.
 
-    Represent the attributes of a relationship set. Attributes that are part of the primary key are underlined.
+- **Double lines**: Indicate [[notes/Constraint(E-R)#Participation constraints|total participation]] of an entity in a relationship set.
 
-- **Lines**
-  
-    Link entity sets to relationship sets.
-
-- **Dashed lines**
-
-    Link attributes of a relationship set to the relationship set.
-
-- **Double lines**
-
-    Indicate [[notes/Constraint(E-R)#Participation constraints|total participation]] of an entity in a relationship set.
-
-- **Double diamonds**
-
-    Represent identifying relationship sets linked to weak entity sets.
+- **Double diamonds**: Represent identifying relationship sets linked to weak entity sets.
 
 ![er-diagram-basics](notes/images/er-diagram-basics.png)
 
@@ -87,3 +73,24 @@ In E-R diagrams, a weak entity set is depicted via a rectangle, like a strong en
 - The relationship set connecting the weak entity set to the identifying entity set is depicted by a **double diamond**.
 
 ![er-diagram-weak-entity-set](notes/images/er-diagram-weak-entity-set.png)
+
+## Specialisation
+
+- [[notes/Extended E-R features#Specialisation|Specialisation]] is depicted by a **hollow arrow-head** pointing from the specialised entity to the other entity.
+- This relationship is referred to as the ISA relationship, which stands for 'is a'.
+  - e.g., `instructor` 'is a' `employee`.
+- For **overlapping specialisation**, **two separate arrows** are used.
+- For **disjoint specialisation**, a **single arrow** is used.
+
+![er-diagram-specialisation](notes/images/er-diagram-specialisation.png)
+
+### Completeness constraint
+
+- [[notes/Extended E-R features#Completeness constraint|Total generalisation]] is specified in an E-R diagram by **adding the keyword** 'total' in the diagram and drawing a **dashed line** from the keyword to the corresponding hollow arrow-head(s).
+
+![er-diagram-total-generalisation](notes/images/er-diagram-total-generalisation.png)
+
+## Aggregation
+- [[notes/Extended E-R features#Aggregation|Aggregation]] is specified by drawing a **rectangular box** around the relationships treated as a higher-level entity.
+  
+![er-diagram-aggregation](notes/images/er-diagram-aggregation.png)

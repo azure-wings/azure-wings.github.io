@@ -52,5 +52,6 @@ A **database management system**(DBMS) is a collection of interrelated data and 
   - [[notes/Attribute(E-R)]]
 - [[notes/Constraint(E-R)]]
 - [[notes/Primary key(E-R)]]
+- [[notes/Extended E-R features]]
 - [[notes/E-R diagram]]
 - [[notes/Reduction to relational schema]]
