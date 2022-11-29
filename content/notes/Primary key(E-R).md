@@ -29,3 +29,13 @@ forms a primary key for $R$.
 The choice of the primary key for a relationship set depends on the [[notes/Constraint(E-R)#Mapping cardinality|mapping cardinality]] of the relationship set.
 
 ## Weak entity sets
+
+In some cases, the primary key of an entity in a relationship is redundant when describing the relationship. In this case, an alternative way to deal with this redundancy is to not store the redundant attribute in the entity.
+
+A **weak entity** is one whose existence is dependent on another entity, called its **identifying entity**. An entity set that is not a weak entity set is termed a **strong entity set**.
+
+Instead of associating a primary key with a weak entity, we use the identifying entity, along with extra attributes called a **discriminator** or **partial key** to uniquely identify a weak entity.
+
+Every weak entity _must_ be associated with an identifying entity; the weak entity set is said to be **existence dependent** on the identifying entity set.
+- The identifying entity set is said to **own** the weak entity set that it identifies.
+- The relationship associating the weak entity set with the identifying entity set is called the **identifying relationship**.

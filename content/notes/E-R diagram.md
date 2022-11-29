@@ -80,5 +80,10 @@ If there are more than arrow, there are two ways of interpreting the meaning. Su
 
 [[notes/Functional dependencies]] allow either of these interpretations to be specified in an unambiguous manner.
 
-## Weak entity sets
+## [[notes/Primary key(E-R)#Weak entity sets|Weak entity sets]]
 
+In E-R diagrams, a weak entity set is depicted via a rectangle, like a strong entity set, but there are two main differences:
+- The discriminator of a weak entity is underlined with a **dashed line**.
+- The relationship set connecting the weak entity set to the identifying entity set is depicted by a **double diamond**.
+
+![er-diagram-weak-entity-set](notes/images/er-diagram-weak-entity-set.png)
