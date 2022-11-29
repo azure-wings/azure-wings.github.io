@@ -21,7 +21,7 @@ To distinguish among the various relationships of a relationship set, the **indi
 Let $R$ be a relationship set involving entity sets $E_1, \cdots, E_n$. Let $A = \{ a_1, \cdots, a_m \}$ be the set of attributes assoiciated with $R$, which may be $\emptyset$. Then, the set of attributes
 
 $$
-\left( \bigcup_{i=1}^n \texttt{primary\_key}(E_i) \right) \cup A
+\left( \bigcup_{i=1}^n \texttt{primary-key}(E_i) \right) \cup A
 $$
 
 forms a primary key for $R$.
