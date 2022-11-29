@@ -24,6 +24,10 @@ An relationship may also have attributes called **descriptive attirbutes** that 
 
 ![descriptive-attribute-example](/notes/images/descriptive-attribute-example.png)
 
+## Nonbinary relationship sets
+
 The number of entity sets that participate in a relationship set is the **degree** of the relationship set.
 - A binary set relationship set is of degree 2.
 - A ternary set relationship set is of degree 3.
+
+A relationship set with degree greater than 2 are uncommon in practice.
