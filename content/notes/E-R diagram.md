@@ -78,7 +78,7 @@ If there are more than arrow, there are two ways of interpreting the meaning. Su
 - For each entity set $A_k (i < k \leq n)$, each combination of the entities from the other entity sets can be associated with at most one entity from $A_k$.
   - i.e., Each set $\{ A_1, \cdots, A_{k-1}, A_{k+1}, \cdots, A_n \}$, for $i < k \leq n$, forms a candidate key.
 
-[[notes/Functional dependencies]] allow either of these interpretations to be specified in an unambiguous manner.
+[[notes/Functional dependency|Functional dependencies]] allow either of these interpretations to be specified in an unambiguous manner.
 
 ## [[notes/Primary key(E-R)#Weak entity sets|Weak entity sets]]
 
