@@ -27,3 +27,5 @@ $$
 forms a primary key for $R$.
 
 The choice of the primary key for a relationship set depends on the [[notes/Constraint(E-R)#Mapping cardinality|mapping cardinality]] of the relationship set.
+
+## Weak entity sets
