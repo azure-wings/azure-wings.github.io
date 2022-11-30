@@ -13,7 +13,7 @@ S = \lbrace c_1c_2\cdots c_n : c_i \in C \rbrace.
 $$
 Concrete syntax defines which strings are considered as programs. Let $P$ be the set of all possible programs. In other words,
 $$
-P = \lbrace p: p \;\text{is a program} \rbrace.
+P = \lbrace p: p \text{ is a program} \rbrace.
 $$
 It is clear that $P \subseteq S$. Concrete syntax determines which elements $s \in S$ are in $P$. 
 

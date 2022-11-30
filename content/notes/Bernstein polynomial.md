@@ -8,7 +8,7 @@ A **Bernstein polynomial** is a polynomial that is a [linear combination](notes/
 
 ## Definition
 The $n +1$ **Bernstein basis polynomials** of degree $n$ are defined as
-> $b_{\nu, n}(x) = \binom{n}{\nu}x^\nu (1-x)^{n-\nu}, \qquad \text{where}\; \nu = 0, \cdots, n$.
+> $b_{\nu, n}(x) = \binom{n}{\nu}x^\nu (1-x)^{n-\nu}, \qquad \text{where } \nu = 0, \cdots, n$.
 
 The name is from the fact that the Bernstein basis polynomials of degree $n$ form a [basis](notes/Basis.md) for the [vector space](notes/Vector%20space.md) $\mathbb{P}_n$, a space which consists of polynomials with degree at most $n$. 
 

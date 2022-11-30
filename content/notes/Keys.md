@@ -11,7 +11,7 @@ Let $K \subseteq R$, where $R$ is a [[notes/View of data#Instances and schemas |
 - **Superkey**
   
   $K$ is a **superkey** of $R$ if value for $K$ are sufficient to identify a unique tuple of each possible relation instance $r(R)$.
-    - i.e., $\forall \;t_1, t_2 \in R: t_1 \neq t_2 \Rightarrow t_1.K \neq t_2.K$
+    - i.e., $\forall t_1, t_2 \in R: t_1 \neq t_2 \Rightarrow t_1.K \neq t_2.K$
   
 - **Candidate key**
   
@@ -27,7 +27,7 @@ Let $K \subseteq R$, where $R$ is a [[notes/View of data#Instances and schemas |
 Let $A_i$ be an attribute of relations $r_i$.
 
 - A **foreign-key constraint** from attribute(s) $A_1$ of relation $r_1$ to the primary-key $A_2$ of relation $r_2$ states that on any database instance, the value of $A_1$ for **each** tuple in $r_1$ must also be the value of $A_2$ for **some** tuple in $r_2$.
-    - i.e., $\forall \, t_1 \in R_1: \exists \,t_2 \in R_2$ such that $t_1.A_1 = t_2.A_2$
+    - i.e., $\forall t_1 \in R_1: \exists \,t_2 \in R_2$ such that $t_1.A_1 = t_2.A_2$
 
 - Attribute set $A_1$ is called a **foreign key** from $r_1$, referencing $r_2$.
     - The relation $r_1$ is also called the **referencing relation**; $r_2$ is also called the **referenced relation**.
