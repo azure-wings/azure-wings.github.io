@@ -22,4 +22,4 @@ Consider a schema $R = \texttt{dept-advisor}(\texttt{sID}, \texttt{iID}, \texttt
 
 Then, the candidate keys are $\{ \texttt{sID}, \texttt{deptName} \}$ and $\{ \texttt{sID}, \texttt{iID} \}$.
 
-Observe that $R$ is in 3NF.
+Although $R$ is not in BCNF, $R$ is in 3NF.
