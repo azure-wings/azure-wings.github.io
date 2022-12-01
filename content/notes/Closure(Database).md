@@ -80,5 +80,6 @@ The concept of closures can also be applied to [[notes/Multivalued dependency|mu
 
 First, note that from the definition of multivalued dependencies:
 - $\alpha \to \beta \Rightarrow \alpha \twoheadrightarrow \beta$.
+- $\alpha \twoheadrightarrow \beta \Rightarrow \alpha \twoheadrightarrow R \setminus (\alpha \cup \beta)$
 
 Given a set $D$ of multivalued dependencies, the **closure** $D^+$ is the set of all **functional and multivalued** dependencies logically implied by $D$.
