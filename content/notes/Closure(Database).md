@@ -73,3 +73,12 @@ REPEAT
     THEN ADD gamma TO A_closure
 UNTIL (A_closure CONVERGE)
 ```
+
+## Closure of multivalued dependencies
+
+The concept of closures can also be applied to [[notes/Multivalued dependency|multivalued dependencies]].
+
+First, note that from the definition of multivalued dependencies:
+- $\alpha \to \beta \Rightarrow \alpha \twoheadrightarrow \beta$.
+
+Given a set $D$ of multivalued dependencies, the **closure** $D^+$ is the set of all **functional and multivalued** dependencies logically implied by $D$.

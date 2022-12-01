@@ -16,9 +16,7 @@ Conversely, if functional dependencies of the original relation can be checked o
 
 ## Definition
 
-Let $F$ be the set of functional dependencies on schema $R$, and let $R_1, \cdots, R_n$ be a decomposition of $R$.
-
-The **restriction** of $F$ to $R_i$, denoted as $F_i$, is the set of all functional dependencies in the **[[notes/Closure(Database)|closure]]** $F^+$ (Note: **not** $F$) that include only attributes of $R_i$.
+Let $F$ be the set of functional dependencies on schema $R$, and let $R_1, \cdots, R_n$ be a decomposition of $R$. Let $F_i$ be a [[notes/Restriction(Database)|restriction]] of $F$ to $R_i$.
 
 The decomposition is **dependency preserving** if the following holds:
 
