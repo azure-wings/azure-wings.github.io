@@ -49,3 +49,24 @@ A **canonical cover** for $F$ is a set of dependencies $F_c$ that satisfies all 
   - i.e., $\forall \alpha_1 \to \beta_1, \alpha_2 \to \beta_2 \in F_c: \alpha_1 \neq \alpha_2$
 
 ### Purpose of canonical covers
+
+Whenever a user performs an update on a relation, the [[notes/Database systems|database system]] must ensure that the update does not violate any functional dependencies.
+
+The effort spent in checking for violations in functional dependencies can be reduced by testing on only a simplified set of functional dependencies that has the same closure as the given set. This is the **canonical cover** of the functional dependencies.
+
+
+### Algorithm for computing canonical covers
+
+```
+F_c = F
+REPEAT
+  FOR EACH alpha -> beta1, alpha -> beta2 IN F_c
+    APPLY union rule
+    /* alpha -> beta1, beta2 */
+    REPLACE TO F
+  FOR EACH f in F_c
+    IF EXISTS (extraneous attribute A) IN f
+    REMOVE A FROM f
+UNTIL (F_c CONVERGE)
+```
+Note that the **union rule** may become applicable after some extraneous attributes have been deleted, so it has to be re-applied.

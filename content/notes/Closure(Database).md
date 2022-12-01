@@ -60,7 +60,7 @@ REPEAT
   FOR EACH PAIR f1, f2 IN F_closure
     IF f1 AND f2 APPLY transitivity
     THEN ADD TO F_closure
-UNTIL F_closure CONVERGE
+UNTIL (F_closure CONVERGE)
 ```
 
 ### Algorithm for computing $\alpha^+$
@@ -71,5 +71,5 @@ REPEAT
   FOR EACH beta -> gamma IN A
     IF beta IN A_closure
     THEN ADD gamma TO A_closure
-UNTIL A_closure CONVERGE
+UNTIL (A_closure CONVERGE)
 ```
