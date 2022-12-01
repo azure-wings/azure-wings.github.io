@@ -20,6 +20,6 @@ If a relation is in [[notes/Boyce-Codd normal form|BCNF]], then it is in 3NF als
 
 Consider a schema $R = \texttt{dept-advisor}(\texttt{sID}, \texttt{iID}, \texttt{deptName})$ with the functional dependencies $\texttt{iID} \to \texttt{deptName}$ and $\texttt{sID}, \texttt{deptName} \to \texttt{iID}$.
 
-Then, the candidate keys are $\{ \texttt{sID}, \texttt{deptName} \}$ and $\{ \texttt{sID}, \texttt{iID} \}$.
+Then, the candidate keys are $\lbrace \texttt{sID}, \texttt{deptName} \rbrace$ and $\lbrace \texttt{sID}, \texttt{iID} \rbrace$.
 
 Although $R$ is not in BCNF, $R$ is in 3NF.

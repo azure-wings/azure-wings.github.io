@@ -14,7 +14,7 @@ For all functional dependencies $\alpha \to \beta \in F^+$, where $\alpha, \beta
 
 ### Example
 
-Consider $\texttt{in-dep(\underline{ID}, name, salary, \underline{deptName}, building, budget)}$, and the set of functional dependencies $F = \{ \texttt{ID} \to \{\texttt{name,deptName,salary}\}, \texttt{deptName} \to \{\texttt{building,budget}\} \}$.
+Consider $\texttt{in-dep(\underline{ID}, name, salary, \underline{deptName}, building, budget)}$, and the set of functional dependencies $F = \lbrace \texttt{ID} \to \lbrace \texttt{name,deptName,salary} \rbrace, \texttt{deptName} \to \lbrace \texttt{building,budget} \rbrace \rbrace$.
   - This is **not** in BCNF because
     - $\texttt{deptName} \to \texttt{building,budget}$ holds in $\texttt{in-dep}$, but
     - $\texttt{deptName}$ is **not** a superkey.

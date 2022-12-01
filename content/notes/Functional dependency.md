@@ -30,8 +30,12 @@ Given a set $F$ of functional dependencies, there are certain other functional d
 
 The set of all functional dependencies logically implied by $F$ is called the **closure** of $F$, and is denoted as $F^+$.
 
-- e.g., $F = \{ A \to B, B \to C \}$\
-  Then, $F^+ = \{ A \to B, B \to C, A \to C \}$
+- e.g., $F = \lbrace A \to B, B \to C \rbrace$\
+  Then, $F^+ = \lbrace A \to B, B \to C, A \to C \rbrace$
+
+### Armstrong's axioms
+
+For any set $F$ of functional dependencies, the closure $F^+$ of $F$ can be 
 
 ## Trivial functional dependencies
 
