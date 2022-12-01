@@ -24,29 +24,6 @@ The functional dependency $\alpha \to \beta$ is said to **hold** on schema $r(R)
 One easy way to understand the concept of functional dependency is to interpret $\alpha \to \beta$ as: 
 > If values of $\alpha$ is given, then values of $\beta$ is _uniquely_ determined.
 
-## Closure of functional dependencies
-
-Given a set $F$ of functional dependencies, there are certain other functional dependencies that are logically implied by $F$.
-
-The set of all functional dependencies logically implied by $F$ is called the **closure** of $F$, and is denoted as $F^+$.
-
-### Armstrong's axioms
-
-For any set $F$ of functional dependencies, the closure $F^+$ of $F$ can be obtained by repeatedly applying **Armstrong's axioms**.
-
-Let $\alpha, \beta, \gamma$ be sets of attributes of a relation schema $R$ with the set of functional dependency $F$.
-
-- **Reflexive rule**: $\beta \subseteq \alpha \Rightarrow \alpha \to \beta$
-- **Augmentation rule**: $\alpha \to \beta \Rightarrow \forall \gamma: \gamma\alpha \to \gamma\beta$
-- **Transitivity rule**: $\alpha \to \beta \land \beta \to \gamma \Rightarrow \alpha \to \gamma$
-
-The above rules are both
-- **Sound**: Generates only the functional dependencies that _actually hold_.
-- **Complete**: Generates _all_ the functional dependencies that hold.
-
-### Example
-Let $R = (A, B, C, G, H, I)$ and $F = \lbrace  \rbrace$
-
 ## Trivial functional dependencies
 
 A functional dependency is **trivial** if it is satisfied by all instances of a relation.

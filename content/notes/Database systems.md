@@ -60,7 +60,9 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 
 ### Relational database design
 - [[notes/Overview of normalisation]]
+- [[notes/Functional dependency]]
+  - [[notes/Closure(Database)]]
+  - [[notes/Canonical cover]]
 - [[notes/Database normalisation]]
-  - [[notes/Functional dependency]]
   - [[notes/Boyce-Codd normal form]]
   - [[notes/Third normal form]]
