@@ -12,7 +12,7 @@ A **relationship set** is a set of relationships of the same type. Formally, it 
 
 If $E_1, \cdots, E_n$ are entity sets, then a relationship set $R$ is a subset of
 $$
-\{(e_1, \cdots, e_n) : e_i \in E_i, i = 1, \cdots, n\}
+\lbrace (e_1, \cdots, e_n) : e_i \in E_i, i = 1, \cdots, n \rbrace
 $$
 where $(e_1, \cdots, e_n)$ is a relationship.
 

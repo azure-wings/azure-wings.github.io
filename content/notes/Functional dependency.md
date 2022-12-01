@@ -30,12 +30,22 @@ Given a set $F$ of functional dependencies, there are certain other functional d
 
 The set of all functional dependencies logically implied by $F$ is called the **closure** of $F$, and is denoted as $F^+$.
 
-- e.g., $F = \lbrace A \to B, B \to C \rbrace$\
-  Then, $F^+ = \lbrace A \to B, B \to C, A \to C \rbrace$
-
 ### Armstrong's axioms
 
-For any set $F$ of functional dependencies, the closure $F^+$ of $F$ can be 
+For any set $F$ of functional dependencies, the closure $F^+$ of $F$ can be obtained by repeatedly applying **Armstrong's axioms**.
+
+Let $\alpha, \beta, \gamma$ be sets of attributes of a relation schema $R$ with the set of functional dependency $F$.
+
+- **Reflexive rule**: $\beta \subseteq \alpha \Rightarrow \alpha \to \beta$
+- **Augmentation rule**: $\alpha \to \beta \Rightarrow \forall \gamma: \gamma\alpha \to \gamma\beta$
+- **Transitivity rule**: $\alpha \to \beta \land \beta \to \gamma \Rightarrow \alpha \to \gamma$
+
+The above rules are both
+- **Sound**: Generates only the functional dependencies that _actually hold_.
+- **Complete**: Generates _all_ the functional dependencies that hold.
+
+### Example
+Let $R = (A, B, C, G, H, I)$ and $F = \lbrace  \rbrace$
 
 ## Trivial functional dependencies
 

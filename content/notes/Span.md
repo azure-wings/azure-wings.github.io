@@ -10,7 +10,7 @@ The **span** of $S$, denoted $\text{span}(S)$ or $\langle S \rangle$,
 is the set consisting of all linear combinations of the
 vectors in $S$.
 
-We define $\text{span}(\emptyset) = \{0\}$ for convenience.
+We define $\text{span}(\emptyset) = \lbrace 0 \rbrace$ for convenience.
 A subset $S$ of a vector space $V$ **generates** (or **spans**) $V$
 if $\text{span}(S) = V$.\
 In this case, we also say that the vectors of $S$ generate (or span)
@@ -23,7 +23,7 @@ $V$.
 >Moreover, any [subspace](notes/Subspace.md) of $V$ that contains $S$ must also contain $\text{span}(S)$.
 
 ### Proof
-This result is immediate if $S = \emptyset$ because $\text{span}(\emptyset) = \{\mathbf{0}\}$, which is a subspace that contains $S$ and is contained in any subspace of $V$.
+This result is immediate if $S = \emptyset$ because $\text{span}(\emptyset) = \lbrace \mathbf{0} \rbrace$, which is a subspace that contains $S$ and is contained in any subspace of $V$.
 
 If $S \neq \emptyset$, then $S$ contains some vector $\mathbf{z}$; $0\mathbf{z} = \mathbf{0}$ is in $\text{span}(S)$.
 

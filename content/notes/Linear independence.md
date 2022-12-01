@@ -42,5 +42,5 @@ $$\tag*{$||$}$$
 >Let $S$ be a linearly independent subset of a vector space $V$, 
 >and let $\mathbf{v}$ be a vector in $V$ that is not in $S$.
 >
->Then $S \cup \{\mathbf{v}\}$ is linearly dependent 
+>Then $S \cup \lbrace \mathbf{v} \rbrace$ is linearly dependent 
 >if and only if $\mathbf{v} \in \text{span}(S)$.

@@ -9,7 +9,7 @@ toc: true
 
 ## Observations
 ### Observation 1
->In any vector space $V$, $V$ and $\{0\}$ are subspaces of $V$.
+>In any vector space $V$, $V$ and $\lbrace \mathbf{0} \rbrace$ are subspaces of $V$.
 >The latter is called the **zero subspace** of $V$.
 
 ## Theorems

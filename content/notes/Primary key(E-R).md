@@ -18,7 +18,7 @@ The concepts of superkey, candidate key, and primary key are applicable to entit
 
 To distinguish among the various relationships of a relationship set, the **individual primary keys of the entities** in the relationship set are used.
 
-Let $R$ be a relationship set involving entity sets $E_1, \cdots, E_n$. Let $A = \{ a_1, \cdots, a_m \}$ be the set of attributes assoiciated with $R$, which may be $\emptyset$. Then, the set of attributes
+Let $R$ be a relationship set involving entity sets $E_1, \cdots, E_n$. Let $A = \lbrace a_1, \cdots, a_m \rbrace$ be the set of attributes assoiciated with $R$, which may be $\emptyset$. Then, the set of attributes
 
 $$
 \left( \bigcup_{i=1}^n \texttt{primary-key}(E_i) \right) \cup A

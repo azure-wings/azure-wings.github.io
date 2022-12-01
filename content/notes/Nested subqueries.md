@@ -56,7 +56,7 @@ WHERE   (course_id, sec_id, semester, year) IN
 `SOME` clause can check if the predicate is satisfied by at least one tuple in the relation.
 
 - `F <comp> SOME r` $\Leftrightarrow$
-$\exists \, t \in r$  such that $(F \texttt{ <comp> } t)$, where $\texttt{<comp>} \in \{<, \leq, >, \geq, =, \neq\}$
+$\exists \, t \in r$  such that $(F \texttt{ <comp> } t)$, where $\texttt{<comp>} \in \lbrace <, \leq, >, \geq, =, \neq \rbrace$
 - `= SOME` $\Leftrightarrow$ `IN`, however `<> SOME` $\not\Leftrightarrow$ `NOT IN`
 
 **Example**    
@@ -87,7 +87,7 @@ WHERE   salary > SOME
 `ALL` clause can check if the predicate is satisfied by all of the tuples in the relation.
 
 - `F <comp> ALL r` $\Leftrightarrow$
-$\forall\, t \in r$ such that $(F \texttt{ <comp> } t)$, where  $\texttt{<comp>} \in \{<, \leq, >, \geq, =, \neq\}$
+$\forall\, t \in r$ such that $(F \texttt{ <comp> } t)$, where  $\texttt{<comp>} \in \lbrace <, \leq, >, \geq, =, \neq \rbrace$
 - `<> ALL` $\Leftrightarrow$ `NOT IN`, however `= ALL` $\not\Leftrightarrow$ `IN`
 
 **Example**    
