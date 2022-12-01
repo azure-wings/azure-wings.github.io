@@ -66,4 +66,5 @@ A **database management system**(DBMS) is a collection of interrelated data and 
 - [[notes/Database normalisation]]
   - [[notes/Boyce-Codd normal form]]
   - [[notes/Third normal form]]
+  - [[notes/Comparison between BCNF and 3NF]]
 - [[notes/Multivalued dependency]]
