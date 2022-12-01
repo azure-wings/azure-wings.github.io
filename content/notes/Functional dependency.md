@@ -43,13 +43,3 @@ Functional dependencies can be used to:
 
 Note that a specific instance of a relation schema may satisfy a functional dependency even if the functional dependency **does not** hold on all legal instances.
 - e.g., A specific instance of `instructor` may, **by chance**, satisfy $\texttt{name} \to \texttt{ID}$
-
-## Dependency preservation
-
-Testing functional dependency constraints each time the database is updated can be costly. Thus, it is useful to design the database in a way that constraints can be tested efficiently.
-
-When decomposing a relation, it may be no longer possible to do the testing without having to perform a [[notes/Relational algebra#Cartesian Product|Cartesian product]] of [[notes/Relational algebra#Join|join]] operations.
-
-A decomposition that makes it computationally hard to enforce functional dependency is said to be _not_ **dependency preserving**. 
-
-Conversely, if functional dependencies of the original relation can be checked on the decomposed relations without the need of Cartesian product or join operations, is said to be **dependency preserving**.
