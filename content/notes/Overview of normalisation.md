@@ -63,7 +63,7 @@ Consider the decomposition of $R$ into $R_1, R_2$. The sufficient condtion for i
 
 The primary goal for a relational database design is:
 - [[notes/Boyce-Codd normal form|BCNF]]
-- [[notes/Overview of normalisation#Lossless decomposition|Lossless]]
+- [[notes/Overview of normalisation#Lossless decomposition|Losslessness]]
 - [[notes/Dependency preservation|Dependency preservation]]
 
 However, if all three of the goals cannot be achieved, then one of the followings is accepted:
