@@ -14,11 +14,28 @@ For all functional dependencies $\alpha \to \beta \in F^+$, where $\alpha, \beta
 
 ### Example
 
-Consider $\texttt{in-dep(\underline{ID}, name, salary, \underline{deptName}, building, budget)}$, and the set of functional dependencies $F = \{ \texttt{ID} \to \{\texttt{name,deptName,salary}\}, \texttt{deptName} \to \{\texttt{building,budget}\} \}$.
+Consider $\texttt{in-dep(\underline{ID}, name, salary, \underline{deptName}, building, budget)}$, and the set of functional dependencies $F = \lbrace \texttt{ID} \to \lbrace \texttt{name,deptName,salary} \rbrace, \texttt{deptName} \to \lbrace \texttt{building,budget} \rbrace \rbrace$.
   - This is **not** in BCNF because
     - $\texttt{deptName} \to \texttt{building,budget}$ holds in $\texttt{in-dep}$, but
     - $\texttt{deptName}$ is **not** a superkey.
-  
+
+## Testing for BCNF
+
+### Testing a functional dependency
+
+To check if a nontrivial functional dependency $\alpha \to \beta$ causes a violation of BCNF:
+
+1. Compute $\alpha^+$.
+2. Verify that $R \subseteq \alpha^+$. i.e., $\alpha^+$ is a superkey of $R$.
+
+### Testing a relation schema decomposition
+
+Let $R$ be a relation schema, and $R_1, \cdots, R_n$ be a decomposition of $R$. Let $F$ be the set of functional dependencies.
+
+1. For every set of attributes $\alpha \subseteq R_i$, compute $\alpha^+$. 
+2. Verify that either $\alpha^+ \cap (R_i \setminus \alpha) = \empty$ or $R \subseteq \alpha^+$.
+   - If the condition is violated by some $\alpha$, the dependency $\alpha \to \left( (\alpha^+ \setminus \alpha) \cap R_i \right) \in F^+$. Hence $R_i$ violates BCNF.
+
 ## Decomposition into BCNF
 
 Let $R$ be a schema that is not in BCNF, and let $\alpha \to \beta$ be the functional dependency that causes a violation in BCNF.

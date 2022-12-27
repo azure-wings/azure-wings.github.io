@@ -58,3 +58,14 @@ $$
 Consider the decomposition of $R$ into $R_1, R_2$. The sufficient condtion for it to be a **lossless decomposition** is that _at least one_ of the following dependencies is in $F^+$:
 - $R_1 \cap R_2 \to R_1$
 - $R_1 \cap R_2 \to R_2$
+
+## Design goals of relational database
+
+The primary goal for a relational database design is:
+- [[notes/Boyce-Codd normal form|BCNF]]
+- [[notes/Overview of normalisation#Lossless decomposition|Losslessness]]
+- [[notes/Dependency preservation|Dependency preservation]]
+
+However, if all three of the goals cannot be achieved, then one of the followings is accepted:
+- **Lossless BCNF**: Lack of dependency preservation
+- **[[notes/Third normal form|3NF]]**: More redundancy

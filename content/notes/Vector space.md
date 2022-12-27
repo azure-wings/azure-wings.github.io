@@ -38,7 +38,7 @@ Let $F$ be any field and $m, n \in \mathbb{N}$. Define $F^{m\times n}$ as the se
 Let $F$ be any field, and $S$ be any nonempty set. Define $V$ as the set of all functions $S \to F$. Then, for any functions $f, g \in V$ and scalar $c \in F$, $\forall s \in S$:
 - $(f + g)(s) = f(s) + g(s)$
 - $(cf)(s) = cf(s)$
-- The zero vector is the function $\mathbf{0}: S \to \{0\}$.
+- The zero vector is the function $\mathbf{0}: S \to \lbrace 0 \rbrace$.
 - The inverse vector $(-f)$ of an arbitrary function $f \in V$ is given as $(-f)(s) = -f(s)$.
 
 ### The space of polynomial functions over a field
