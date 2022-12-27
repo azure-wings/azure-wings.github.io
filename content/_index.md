@@ -3,16 +3,20 @@ title: azurewings
 toc: false
 ---
 
-## azurewings
+👋 Hello, I am **azurewings / Giyeon Lee**, and I study computer science & mathematics at KAIST.
 
-Hello, I am **azurewings / Giyeon Lee**, and I study computer science & mathematics at KAIST.\
+🦊 I enjoy studying and tinkering random subjects by myself.
 
+**Portfolio** [[About me]]
 
-You can find out more about me [[index/About me | here]]!
+**Email** [azurewings.seoul](mailto://azurewings.seoul@gmail.com)   **GitHub** [azure-wings](https://github.com/azure-wings)    **Instagram** [@__azurewings](https://www.instagram.com/__azurewings/)
 
-## Read my writings on...
+---
+## My writings
 
-**[[index/Blog | 🌱 Blog]]** | **[[index/Notes | ✏️ Notes]]** | **[[index/Links | 🔗 Links]]**
+- **[[index/Blog | 🌱 Blog]]**
+- **[[index/Notes | ✏️ Notes]]**
+- **[[index/Links | 🔗 Links]]**
 
 
 <!-- <a href="https://github.com/azure-wings" target="_blank"><img src="https://img.shields.io/badge/Github-282828?style=for-the-badge&logo=GitHub&logoColor=white"/></a>
