@@ -9,15 +9,24 @@ toc: false
 
 **Portfolio** [[About me]]
 
-**Email** [azurewings.seoul](mailto://azurewings.seoul@gmail.com)   **GitHub** [azure-wings](https://github.com/azure-wings)    **Instagram** [@__azurewings](https://www.instagram.com/__azurewings/)
+**Email** [azurewings.seoul](mailto://azurewings.seoul@gmail.com)
+&ensp;
+**GitHub** [azure-wings](https://github.com/azure-wings)
+&ensp;
+**Instagram** [@__azurewings](https://www.instagram.com/__azurewings/)
 
----
 ## My writings
 
-- **[[index/Blog | 🌱 Blog]]**
-- **[[index/Notes | ✏️ Notes]]**
-- **[[index/Links | 🔗 Links]]**
+> [!hint]
+> **[[index/Blog | 🌱 Blog]]**
 
+> [!note]
+> **[[index/Notes | ✏️ Notes]]**
+
+> [!abstract]
+> **[[index/Links | 🔗 Links]]**
+
+---
 
 <!-- <a href="https://github.com/azure-wings" target="_blank"><img src="https://img.shields.io/badge/Github-282828?style=for-the-badge&logo=GitHub&logoColor=white"/></a>
 <a href="https://www.linkedin.com/in/leegiyeon" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white"/></a>
