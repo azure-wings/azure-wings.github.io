@@ -9,22 +9,26 @@ toc: false
 
 **Portfolio** [[About me]]
 
-**Email** [azurewings.seoul](mailto://azurewings.seoul@gmail.com)
+**Email** [azurewings.seoul](mailto:azurewings.seoul@gmail.com)
 &ensp;
 **GitHub** [azure-wings](https://github.com/azure-wings)
 &ensp;
 **Instagram** [@__azurewings](https://www.instagram.com/__azurewings/)
 
-## My writings
+<pre>
 
-> [!hint]
-> **[[index/Blog | 🌱 Blog]]**
+</pre>
 
-> [!note]
-> **[[index/Notes | ✏️ Notes]]**
+🔥 Check out my writings in the links below!
 
-> [!abstract]
-> **[[index/Links | 🔗 Links]]**
+> [!hint] **[[index/Blog | Blog]]**
+> Blog posts of miscellaneous topics.
+
+> [!note] **[[index/Notes | Notes]]**
+> Notes I took for several subjects.
+
+> [!abstract] **[[index/Links | Links]]**
+> Web clippings made with great care.
 
 ---
 
