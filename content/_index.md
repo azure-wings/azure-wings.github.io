@@ -7,9 +7,9 @@ toc: false
 
 🦊 I enjoy studying and tinkering random subjects by myself.
 
-**Portfolio** [[About me]]
-
-**Email** [azurewings.seoul](mailto:azurewings.seoul@gmail.com)
+> **Portfolio** [[About me]]
+>
+> **Email** [azurewings.seoul](mailto:azurewings.seoul@gmail.com)
 &ensp;
 **GitHub** [azure-wings](https://github.com/azure-wings)
 &ensp;
