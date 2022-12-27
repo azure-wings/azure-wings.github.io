@@ -42,7 +42,7 @@ function initPopover(baseURL, useContextualBacklinks, renderLatex) {
 
         if (el) {
           li.appendChild(el)
-          if (renderLatex) {
+          if (LATEX_ENABLED) {
             renderMathInElement(el, {
               delimiters: [
                 { left: '$$', right: '$$', display: false },

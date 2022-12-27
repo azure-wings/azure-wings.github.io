@@ -3,9 +3,10 @@ title: azurewings
 toc: false
 ---
 
-## Hello, I am...
+## azurewings
 
-**azurewings / Giyeon Lee**, and I study computer science & mathematics at KAIST.
+Hello, I am **azurewings / Giyeon Lee**, and I study computer science & mathematics at KAIST.\
+
 
 You can find out more about me [[index/About me | here]]!
 
