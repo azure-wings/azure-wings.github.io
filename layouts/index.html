@@ -22,7 +22,7 @@
 </style>
 {{ $js := resources.Get "js/graph.js" | resources.Fingerprint "md5" }}
 <script src="{{ $js.Permalink }}"></script>
-</div> -->
+</div>
 
 {{partial "search.html" .}}
 <div class="singlePage">
@@ -35,8 +35,8 @@
           {{partial "recent.html" . }}
         {{end}}
     </article>
-    {{partial "footerIndex.html" .}}
-    <!-- {{partial "contact.html" .}} -->
+    <!-- {{partial "footerIndex.html" .}} -->
+    {{partial "contact.html" .}}
 </div>
 </body>
 </html>
