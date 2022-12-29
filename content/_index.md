@@ -7,7 +7,7 @@ toc: false
 
 🦊 I enjoy studying and tinkering random subjects by myself.
 
-> **Portfolio** [[About me]]
+> **Portfolio** [[index/About me | About me]]
 >
 > **Email** [azurewings.seoul](mailto:azurewings.seoul@gmail.com)
 &ensp;
