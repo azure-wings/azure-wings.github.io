@@ -13,7 +13,7 @@ math: true
 `Mar. 2020 ~ Current`
 
 - Major in [Computer Science](https://cs.kaist.ac.kr/)
-- Double major in [Mathtmatics](https://mathsci.kaist.ac.kr/)
+- Double major in [Mathematics](https://mathsci.kaist.ac.kr/)
 - [My coursework](https://www.notion.so/Coursework-bf592c57cd5c49aaac3e0a351a0df6a1)
 
 ### [Korea Science Academy of KAIST](https://ksa.hs.kr/)
